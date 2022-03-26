@@ -1,0 +1,47 @@
+.catalog {
+    display: flex;
+
+   @include mobile{
+       flex-direction: column;
+   }
+
+
+
+    &__filter {
+        width: 20%;
+
+        @include tablet {
+            width: unset;
+        }
+
+        @include mobile{
+           display: flex;
+        }
+
+        &__widget{
+            margin-bottom: 2rem;
+            @include mobile{
+                width:30%;
+             }
+
+
+
+            &__title{
+                font-size:1.25rem;
+                font-weight: 600;
+                margin-bottom: 16px;
+            }
+        &__content{
+            color:$txt-second-color;
+            &__item{
+                margin-bottom:13px;
+            }
+        }
+
+        }
+    }
+
+    &__content {
+        flex-grow: 1;
+    }
+}

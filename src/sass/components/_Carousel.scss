@@ -1,0 +1,77 @@
+.content {
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+   @include tablet {
+    left: 0%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.479);
+    height:100vh
+   }
+   @include mobile {
+    position: static;
+    height: 100vh;
+    background-color:white;
+  
+}
+    h3 {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 600;
+        font-size: 3.25rem;
+        line-height: 6.75rem;
+        overflow: hidden;
+        @include mobile{
+            font-size:23px;
+        }
+    }
+
+    p {
+        color: $txt-second-color;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        overflow: hidden;
+      @include tablet {
+          color: rgb(224, 224, 224);
+         padding:40px;
+      }
+      @include mobile {
+        font-size:23px;
+        color: $txt-second-color;
+        padding:40px;
+      }
+    }
+}
+
+.carousel-control-next {
+    display: none;
+}
+
+.carousel-control-prev {
+    display: none;
+}
+
+.carousel-inner {
+    border-radius: 5px;
+}
+
+// @include mobile {
+//     .carousel-caption {
+//         position: static;
+//         margin: 0 auto;
+//         margin-bottom:20px;
+        
+//     h3 {
+//             font-size: 20px;
+//             line-height: 2rem;
+//         }
+
+//         p {
+//             font-size: 8px;
+//             line-height: 2rem;
+//         }
+//     }
+// }
+

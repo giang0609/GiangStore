@@ -1,0 +1,32 @@
+.policy {
+    display: flex;
+    margin-top: 20px;
+    transition: transform 0.2s ;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   &:hover {
+        transform: translateY(-15%)
+        
+   }
+
+    &__icon {
+        font-size: 54px;
+        padding-right: 10px;
+    }
+
+    &__info {
+     
+      align-content: center;
+    height: 100%;
+    margin-top: 15px;
+        
+    
+    
+        h5 {
+            margin: 0px;
+        }
+        p{
+            color:$txt-second-color;
+        }
+    }
+
+}
